@@ -1,0 +1,14 @@
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--light-purple);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    text-align: center;
+}

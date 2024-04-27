@@ -1,7 +1,10 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/srccomponents/Header/Header";
+import Counter from "@/srccomponents/Ui/Counter";
 
 export default function Home() {
+
   return (
     <>
       <header className={styles.header}>
@@ -71,8 +74,17 @@ export default function Home() {
           </div>
         </section>
         <section id="partners">
-          <div className="container">
-            <h2>Bizga ishonch bildirganlar va muvofaqqiyatli topshiririlgan ishlar soni</h2>
+          <div className={`container ${styles.partners_wrapper}`}>
+            <Image src="/Limsa - Logotype 2.png"
+              alt="Limsa Logo"
+              width={250}
+              height={60} />
+            <h2 className={styles.partners_title}>Bizga ishonch bildirganlar va muvofaqqiyatli topshiririlgan ishlar soni</h2>
+
+            <div className={styles.counter}>
+              <Counter countEnd={500} text={"Complated projects"} />
+              <Counter countEnd={20} text={"Clients"} />
+            </div>
           </div>
         </section>
       </main>
