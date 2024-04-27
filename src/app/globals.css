@@ -2,7 +2,9 @@
   --black-purple: #302A4C;
   --dark-purple: #561689;
   --light-purple: #6C2DBA;
-  --white: #F0D4FF;
+  --white-purple: #F0D4FF;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 * {
@@ -10,4 +12,17 @@
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+}
+
+body {
+  /* background-color: var(--dark-purple); */
+}
+
+main {
+  margin-top: 84px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
 }

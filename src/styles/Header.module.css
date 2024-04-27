@@ -1,0 +1,34 @@
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 60px;
+
+    & .mav_link {
+        color: #FFFFFF;
+        text-decoration: none;
+
+    }
+}
+
+.header_button {
+    padding: 12px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid;
+    transition: all 0.5s ease;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--light-purple);
+
+    &:hover {
+        border: 1px solid var(--white);
+        background-color: var(--light-purple);
+        color: var(--white);
+    }
+}
