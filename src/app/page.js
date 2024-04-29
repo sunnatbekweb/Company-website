@@ -2,6 +2,22 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/srccomponents/Header/Header";
 import Counter from "@/srccomponents/Ui/Counter";
+import Logo from "@/srccomponents/Ui/Logo";
+import ItTime from "/public/ITtimeLogo.png";
+import dezLogo from "/public/dez_logo.png";
+import HomeKit from "/public/homekitLogo.png";
+import Loyal from "/public/Loyal.png";
+import NOITS from "/public/namanganOITS.jpg";
+import abBuild from "/public/abBuild.jpg";
+import avtozoomWeb from "/public/avtozoomWebsite.jpg";
+import dezinfection from "/public/desinfection.jpg";
+import homekit from "/public/homekit.jpg";
+import itTime from "/public/itTime.jpg";
+import loyalWebsite from "/public/loyalWebsite.jpg"
+import noits from "/public/noits.jpg";
+import propartnyor from "/public/propartnyor.jpg";
+import zamonTour from "/public/zamonTour.jpg";
+import Websites from "@/srccomponents/Ui/Websites";
 
 export default function Home() {
 
@@ -84,6 +100,31 @@ export default function Home() {
             <div className={styles.counter}>
               <Counter countEnd={500} text={"Complated projects"} />
               <Counter countEnd={20} text={"Clients"} />
+            </div>
+            <div className={styles.logos}>
+              <Logo image={ItTime.src} text={"IT Time"} />
+              <Logo image={dezLogo.src} text={"Dezinfeksiya Tashkent"} />
+              <Logo image={HomeKit.src} text={"HomeKit"} />
+              <Logo image={Loyal.src} text={"Loyal"} />
+              <Logo image={NOITS.src} text={"Namangan OITS"} />
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div className="container">
+            <h4 className={styles.projects_text_sm}>Our projects</h4>
+            <h2 className={styles.projects_text_lg}>What we did</h2>
+
+            <div className={styles.projects_wrapper}>
+              <Websites image={abBuild} />
+              <Websites image={avtozoomWeb} />
+              <Websites image={dezinfection} />
+              <Websites image={homekit} />
+              <Websites image={itTime} />
+              <Websites image={loyalWebsite} />
+              <Websites image={noits} />
+              <Websites image={propartnyor} />
+              <Websites image={zamonTour} />
             </div>
           </div>
         </section>
