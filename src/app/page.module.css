@@ -168,7 +168,8 @@
     width: 100%;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
 }
 
 /* Projects */
@@ -178,6 +179,7 @@
     font-weight: 700;
     color: var(--gray-second);
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -191,7 +193,21 @@
 
 .projects_wrapper {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     padding: 50px 0;
+}
+
+/* Services */
+
+.service_wrapper {
+    padding: 50px 0;
+}
+
+.service_title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 50px;
 }

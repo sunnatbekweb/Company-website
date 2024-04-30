@@ -18,6 +18,7 @@ import noits from "/public/noits.jpg";
 import propartnyor from "/public/propartnyor.jpg";
 import zamonTour from "/public/zamonTour.jpg";
 import Websites from "@/srccomponents/Ui/Websites";
+import Service from "@/srccomponents/Ui/Service";
 
 export default function Home() {
 
@@ -126,6 +127,17 @@ export default function Home() {
               <Websites image={propartnyor} />
               <Websites image={zamonTour} />
             </div>
+          </div>
+        </section>
+        <section id="services">
+          <div className={`container ${styles.service_wrapper}`}>
+            <h2 className={styles.service_title}>Service types</h2>
+            <Service />
+          </div>
+        </section>
+        <section id="advantages">
+          <div className="container">
+
           </div>
         </section>
       </main>
