@@ -23,6 +23,7 @@ import Service from "@/srccomponents/Ui/Service";
 import { VscFeedback } from "react-icons/vsc";
 import Carousel from "@/srccomponents/Ui/Carousel";
 import TextArea from "antd/es/input/TextArea";
+import Footer from "@/srccomponents/Footer/Footer";
 
 export default function Home() {
 
@@ -173,16 +174,16 @@ export default function Home() {
             <form className={styles.form}>
               <div className={styles.inputs}>
                 <input className={styles.inputText} placeholder="Your name *" type="text" required />
-                <input className={styles.inputText} placeholder="+998 (99) 000-00-00" type="tel" required />
+                <input className={styles.inputText} placeholder="+998" type="tel" required />
               </div>
               <TextArea
                 showCount
                 required
                 maxLength={2000}
-                placeholder="disable resize"
+                placeholder="Sizga qanday yordam bera olamiz"
                 style={{ height: 120, resize: 'none', border: "2px solid #808080", color: "#808080" }}
               />
-              <div style={{ display: "flex", justifyContent: "center", marginTop:"40px", marginBottom:"50px" }}>
+              <div style={{ display: "flex", justifyContent: "center", marginTop: "40px", marginBottom: "50px" }}>
                 <button className={styles.contact_button}>
                   Submit
                 </button>
@@ -191,6 +192,9 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

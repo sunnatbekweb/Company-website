@@ -18,25 +18,28 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul className={styles.nav_list}>
             <li className="">
-              <Link href={"#"} className={styles.mav_link}>
-                Home
-              </Link>
-            </li>
-            <li className="">
-              <Link href={"#"} className={styles.mav_link}>
+              <Link href={"#about"} className={styles.mav_link}>
                 About
               </Link>
             </li>
             <li className="">
-              <Link href={"#"} className={styles.mav_link}>
+              <Link href={"#projects"} className={styles.mav_link}>
+                Projects
+              </Link>
+            </li>
+            <li className="">
+              <Link href={"#services"} className={styles.mav_link}>
+                Services
+              </Link>
+            </li>
+            <li className="">
+              <Link href={"#contact"} className={styles.mav_link}>
                 Contact
               </Link>
             </li>
           </ul>
         </nav>
-        <button className={styles.header_button}>
-          Contact with us
-        </button>
+        <button className={styles.header_button}>Contact with us</button>
       </div>
     </div>
   );
