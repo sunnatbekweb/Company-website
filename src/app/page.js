@@ -1,8 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Header from "@/srccomponents/Header/Header";
-import Counter from "@/srccomponents/Ui/Counter";
-import Logo from "@/srccomponents/Ui/Logo";
 import ItTime from "/public/ITtimeLogo.png";
 import dezLogo from "/public/dez_logo.png";
 import HomeKit from "/public/homekitLogo.png";
@@ -17,8 +14,15 @@ import loyalWebsite from "/public/loyalWebsite.jpg"
 import noits from "/public/noits.jpg";
 import propartnyor from "/public/propartnyor.jpg";
 import zamonTour from "/public/zamonTour.jpg";
+import responsiveImage from "/public/responsive-web-design.png";
+import Header from "@/srccomponents/Header/Header";
+import Counter from "@/srccomponents/Ui/Counter";
+import Logo from "@/srccomponents/Ui/Logo";
 import Websites from "@/srccomponents/Ui/Websites";
 import Service from "@/srccomponents/Ui/Service";
+import { VscFeedback } from "react-icons/vsc";
+import Carousel from "@/srccomponents/Ui/Carousel";
+import TextArea from "antd/es/input/TextArea";
 
 export default function Home() {
 
@@ -137,7 +141,53 @@ export default function Home() {
         </section>
         <section id="advantages">
           <div className="container">
-
+            <div className={styles.advantages_wrapper}>
+              <div>
+                <img src={responsiveImage.src} alt="Image" />
+              </div>
+              <div>
+                <p className={styles.advantages_text_sm}>Responsive</p>
+                <h2 className={styles.advantages_text_lg}>Har qanday ekran o'lchamiga mos keluvchi web dasturlar</h2>
+                <p className={styles.advantages_text}>Startapp sizning web saytingiz yoki mobil ilovangiz barcha qurilmalar birdek ishlashini taminlaydi.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="feedbacks">
+          <div className="container">
+            <div className={styles.feedbacks_text_wrapper}>
+              <VscFeedback style={{ fontSize: "52px", color: "#561689", marginBottom: 20 }} />
+              <h2 className={styles.feedbacks_title}>
+                Hamkorlarimiz fikrlari
+              </h2>
+              <Carousel />
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div className="container">
+            <h2 className={styles.contact_title}>Bizga ma'lumotlaringizni qoldiring</h2>
+            <p className={styles.contact_title2}>
+              Bizning xodimlar tez orada siz bilan aloqaga chiqishadi
+            </p>
+            <form className={styles.form}>
+              <div className={styles.inputs}>
+                <input className={styles.inputText} placeholder="Your name *" type="text" required />
+                <input className={styles.inputText} placeholder="+998 (99) 000-00-00" type="tel" required />
+              </div>
+              <TextArea
+                showCount
+                required
+                maxLength={2000}
+                placeholder="disable resize"
+                style={{ height: 120, resize: 'none', border: "2px solid #808080", color: "#808080" }}
+              />
+              <div style={{ display: "flex", justifyContent: "center", marginTop:"40px", marginBottom:"50px" }}>
+                <button className={styles.contact_button}>
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </section>
       </main>

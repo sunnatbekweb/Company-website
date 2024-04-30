@@ -6,7 +6,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --gray: #60697B;
-  --gray-second:#AAB0BC;
+  --gray-second: #AAB0BC;
 }
 
 * {
@@ -30,8 +30,25 @@ main {
   filter: grayscale(100%);
   transition: all 0.3s ease;
   cursor: pointer;
-  
+
   &:hover {
     filter: grayscale(0);
   }
+}
+
+.swiper {
+  margin: 40px 0;
+  width: 100% !important;
+  height: 350px !important;
+}
+
+.swiper-slide {
+  height: fit-content !important;
+  padding: 40px;
+  background: var(--black-purple);
+  border-radius: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--light-purple) !important;
 }
