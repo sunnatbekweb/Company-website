@@ -6,8 +6,6 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import styles from "@/srcstyles/Footer.module.css";
-import MapComponent from "../Ui/Map";
-import { Map } from "react-yandex-maps";
 import Image from "next/image";
 import Link from "next/link";
 
