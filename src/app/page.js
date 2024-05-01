@@ -132,7 +132,7 @@ export default function Home() {
           <div className="container">
             <div className={styles.advantages_wrapper}>
               <div>
-                <img src={responsiveImage.src} alt="Image" />
+                <img src={responsiveImage.src} className={styles.adv_image} alt="Image" />
               </div>
               <div>
                 <p className={styles.advantages_text_sm}>Responsive</p>
