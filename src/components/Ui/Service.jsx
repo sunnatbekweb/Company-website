@@ -11,10 +11,9 @@ const Service = () => {
     <div className={styles.service_container}>
       <div className={styles.service_card}>
         <div>
-          <Image
-            src={service1}
-            width={500}
-            height={300}
+          <img
+            src={service1.src}
+            className={styles.image}
             style={{ borderRadius: "8px" }}
             alt="123"
           />
@@ -53,10 +52,9 @@ const Service = () => {
       </div>
       <div className={styles.service_card}>
         <div>
-          <Image
-            src={mApps}
-            width={500}
-            height={300}
+          <img
+            src={mApps.src}
+            className={styles.image}
             style={{ borderRadius: "8px" }}
             alt="123"
           />
@@ -95,10 +93,9 @@ const Service = () => {
       </div>
       <div className={styles.service_card}>
         <div>
-          <Image
-            src={tgBots}
-            width={500}
-            height={300}
+          <img
+            src={tgBots.src}
+            className={styles.image}
             style={{ borderRadius: "8px" }}
             alt="123"
           />
@@ -137,10 +134,9 @@ const Service = () => {
       </div>
       <div className={styles.service_card}>
         <div>
-          <Image
-            src={service1}
-            width={500}
-            height={300}
+          <img
+            src={service1.src}
+            className={styles.image}
             style={{ borderRadius: "8px" }}
             alt="123"
           />

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "@/srcstyles/Header.module.css";
+import { HiMenu } from "react-icons/hi";
 
 const Header = () => {
   return (
@@ -39,7 +40,25 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className={styles.header_button}>Contact with us</button>
+        <div className={styles.menu_icon}>
+          <HiMenu
+            style={{ fontSize: 24, color: "#FFFFFF", crsor: "pointer" }}
+          />
+        </div>
+        <div className={styles.actions}>
+          <select name="language" id="#lang" className={styles.select}>
+            <option value="uz" style={{ cursor: "pointer" }}>
+              Uz
+            </option>
+            <option value="ru" style={{ cursor: "pointer" }}>
+              Ru
+            </option>
+            <option value="eng" style={{ cursor: "pointer" }}>
+              Eng
+            </option>
+          </select>
+          <button className={styles.header_button}>Contact with us</button>
+        </div>
       </div>
     </div>
   );

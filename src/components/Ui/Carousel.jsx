@@ -23,28 +23,28 @@ const Carousel = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img src={user.src} />
+        <img src={user.src} alt="User image" />
         <h5 className={styles.title}>Ismoiljon Madgaziyev</h5>
         <p className={styles.text}>
           5 yillik tajribaga ega Full stack web dasturchi va grafik dizayner
         </p>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={user.src} />
+        <img src={user.src} alt="User image" />
         <h5 className={styles.title}>Ismoiljon Madgaziyev</h5>
         <p className={styles.text}>
           5 yillik tajribaga ega Full stack web dasturchi va grafik dizayner
         </p>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={user.src} />
+        <img src={user.src} alt="User image" />
         <h5 className={styles.title}>Ismoiljon Madgaziyev</h5>
         <p className={styles.text}>
           5 yillik tajribaga ega Full stack web dasturchi va grafik dizayner
         </p>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={user.src} />
+        <img src={user.src} alt="User image" />
         <h5 className={styles.title}>Ismoiljon Madgaziyev</h5>
         <p className={styles.text}>
           5 yillik tajribaga ega Full stack web dasturchi va grafik dizayner

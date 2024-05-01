@@ -35,22 +35,10 @@ export default function Home() {
       <main>
         <section id="about">
           <div className={`container ${styles.about_wrapper}`}>
-            <div className={styles}>
+            <div className={styles.texts}>
               <h1 className={styles.text_container}>
-                Sizning
-                <div className={styles.animation}>
-                  <div>
-                    <div className={styles.animatedText}>loyihangizni</div>
-                  </div>
-                  <div>
-                    <div className={styles.animatedText}>biznesingizni</div>
-                  </div>
-                  <div>
-                    <div className={styles.animatedText}>g'oyangizni</div>
-                  </div>
-                </div>
-              </h1>
-              <h1 className={styles.intro_title}>
+                Sizning {" "}
+                  <strong className={styles.animatedText}>biznesingizni</strong> {" "}
                 rivojlantirish uchun mukammal <strong className={styles.strong}>'IT'</strong> yechimlar!
               </h1>
               <article className={styles.article}>
@@ -64,32 +52,32 @@ export default function Home() {
             <div className={styles.images_container}>
               <div className={styles.image_column}>
                 <div className={styles.image_wrapper1}>
-                  <img src={"https://picsum.photos/id/73/160/100"} alt="Image" />
+                  <img src={abBuild.src} style={{ width: 180, border: "1px solid #6C2DBA" }} alt="Image" />
                 </div>
                 <div className={styles.image_wrapper1}>
-                  <img src={"https://picsum.photos/id/7/180/200"} alt="Image" />
+                  <img src={homekit.src} style={{ width: 200, border: "1px solid #6C2DBA" }} alt="Image" />
                 </div>
                 <div className={styles.image_wrapper1}>
-                  <img src={"https://picsum.photos/id/4/200/100"} alt="Image" />
-                </div>
-              </div>
-              <div className={styles.image_column}>
-                <div>
-                  <img src={"https://picsum.photos/id/13/200/150"} alt="Image" />
-                </div>
-                <div className={styles.image_wrapper2}>
-                  <img src={"https://picsum.photos/id/25/200/150"} alt="Image" />
-                </div>
-                <div>
-                  <img src={"https://picsum.photos/id/54/200/150"} alt="Image" />
+                  <img src={itTime.src} style={{ width: 180, border: "1px solid #6C2DBA" }} alt="Image" />
                 </div>
               </div>
               <div className={styles.image_column}>
                 <div className={styles.image_wrapper2}>
-                  <img src={"https://picsum.photos/id/56/180/230"} alt="Image" />
+                  <img src={loyalWebsite.src} style={{ width: 200, border: "1px solid #6C2DBA" }} alt="Image" />
                 </div>
                 <div className={styles.image_wrapper2}>
-                  <img src={"https://picsum.photos/id/63/200/190"} alt="Image" />
+                  <img src={avtozoomWeb.src} style={{ width: 200, border: "1px solid #6C2DBA" }} alt="Image" />
+                </div>
+                <div className={styles.image_wrapper2}>
+                  <img src={noits.src} style={{ width: 200, border: "1px solid #6C2DBA" }} alt="Image" />
+                </div>
+              </div>
+              <div className={styles.image_column}>
+                <div className={styles.image_wrapper2}>
+                  <img src={zamonTour.src} style={{ width: 180, border: "1px solid #6C2DBA" }} alt="Image" />
+                </div>
+                <div className={styles.image_wrapper2}>
+                  <img src={propartnyor.src} style={{ width: 200, border: "1px solid #6C2DBA" }} alt="Image" />
                 </div>
               </div>
             </div>
