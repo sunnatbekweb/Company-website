@@ -10,5 +10,5 @@ export const SendData = (messageTg) => {
   axios
     .post(url)
     .then(() => message.success("Ma'lumotingiz jonatildi!"))
-    .catch(() => message.error("Ma'lumotingiz jo'natishda xatolik yuz berdi!"));
+    .catch(() => message.error("Ma'lumotingizni jo'natishda xatolik yuz berdi!"));
 };
