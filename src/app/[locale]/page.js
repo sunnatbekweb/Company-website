@@ -6,7 +6,7 @@ import About from "@/srccomponents/Layout/About";
 import Partners from "@/srccomponents/Layout/Partners";
 import Projects from "@/srccomponents/Layout/Projects";
 import Services from "@/srccomponents/Layout/Services";
-import Advantages from "@/srccomponents/Layout/advantages";
+import Advantages from "@/srccomponents/Layout/Advantages";
 import Feedbacks from "@/srccomponents/Layout/Feedbacks";
 import Contact from "@/srccomponents/Layout/Contact";
 import Footer from "@/srccomponents/Footer/Footer";
