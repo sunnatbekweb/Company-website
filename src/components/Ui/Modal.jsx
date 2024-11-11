@@ -48,7 +48,7 @@ const ModalForm = () => {
       <Modal
         title={t("contactTitle")}
         centered
-        visible={modalOpen}
+        open={modalOpen}
         onCancel={onClose}
         footer={false}
       >
