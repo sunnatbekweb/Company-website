@@ -68,18 +68,20 @@ const ModalForm = () => {
           <input 
             className={styles.inputText}
             type="tel" 
+            placeholder="Enter phone number"
             value={formData.phone} 
             onChange={handleChange}
+            required
           />
           </label>
           <textarea
-            required
             maxLength={2000}
             placeholder={t("textarea")}
             className={styles.textarea}
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           ></textarea>
           <div
             style={{

@@ -45,10 +45,12 @@ const ContactForm = () => {
         </label>
         <label htmlFor="phone" className={styles.label}>
           <input 
-            className={styles.inputText}
-            type="tel" 
-            value={formData.phone} 
-            onChange={handleChange}
+             className={styles.inputText}
+             type="tel" 
+             placeholder="Enter phone number"
+             value={formData.phone} 
+             onChange={handleChange}
+             required
           />
         </label>
       </div>
