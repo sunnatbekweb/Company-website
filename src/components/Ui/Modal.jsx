@@ -5,6 +5,8 @@ import styles from "@/srcapp/[locale]/page.module.css";
 import { useTranslation } from "react-i18next";
 import { Modal } from "antd";
 import { SendData } from "@/srcservice/axios";
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const ModalForm = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -14,6 +16,7 @@ const ModalForm = () => {
     message: "",
   });
   const { t } = useTranslation();
+  let [phoneNumber, setPhoneNumber] = useState()
 
   const showDrawer = () => {
     setModalOpen(true);
@@ -33,9 +36,9 @@ const ModalForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = `Name: ${formData.name}; PhoneNumber: ${formData.phone}; Message: ${formData.message}`;
+    const data = `Name: ${formData.name}; PhoneNumber: ${phoneNumber}; Message: ${formData.message}`;
     formData.name = "";
-    formData.phone = "";
+    phoneNumber = "";
     formData.message = "";
     SendData(data);
   };
@@ -65,13 +68,13 @@ const ModalForm = () => {
             />
           </label>
           <label htmlFor="phone">
-          <input 
-            className={styles.inputText}
-            type="tel" 
-            placeholder="Enter phone number"
-            value={formData.phone} 
-            onChange={handleChange}
-            required
+          <PhoneInput 
+             className={styles.inputText}
+             placeholder="Enter phone number"
+             defaultCountry="UZ"
+             value={phoneNumber} 
+             onChange={setPhoneNumber}
+             required
           />
           </label>
           <textarea
