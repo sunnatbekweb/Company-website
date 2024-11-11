@@ -11,8 +11,6 @@ const ContactForm = () => {
     message: "",
   });
   const { t } = useTranslation();
-  let [number, setNumber] = useState();
-  const [isValid, setIsValid] = useState();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,7 +44,12 @@ const ContactForm = () => {
           />
         </label>
         <label htmlFor="phone" className={styles.label}>
-          <input type="tel"/>
+          <input 
+            className={styles.inputText}
+            type="tel" 
+            value={formData.phone} 
+            onChange={handleChange}
+          />
         </label>
       </div>
       <textarea

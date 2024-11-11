@@ -14,8 +14,6 @@ const ModalForm = () => {
     message: "",
   });
   const { t } = useTranslation();
-  let [number, setNumber] = useState();
-  const [isValid, setIsValid] = useState();
 
   const showDrawer = () => {
     setModalOpen(true);
@@ -67,7 +65,12 @@ const ModalForm = () => {
             />
           </label>
           <label htmlFor="phone">
-          <input type="tel"/>
+          <input 
+            className={styles.inputText}
+            type="tel" 
+            value={formData.phone} 
+            onChange={handleChange}
+          />
           </label>
           <textarea
             required
