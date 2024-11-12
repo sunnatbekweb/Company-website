@@ -26,7 +26,7 @@ const Footer = () => {
             <div>
               <h3 className={styles.item_title}>{t("footer:address")}</h3>
               <p className={styles.item_text}>
-                Toshkent shahar Yunusobod tumani
+                {t("footer:footerAddress")}
               </p>
             </div>
           </div>
