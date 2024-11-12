@@ -17,6 +17,7 @@ const ModalForm = () => {
   });
   const { t } = useTranslation();
   let [phoneNumber, setPhoneNumber] = useState();
+  const [loading, setLoading] = useState(false);
 
   const showDrawer = () => {
     setModalOpen(true);
@@ -37,8 +38,7 @@ const ModalForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = `Name: ${formData.name}; PhoneNumber: ${phoneNumber}; Message: ${formData.message}`;
-    SendData(data);
-
+    SendData(data, setLoading);
     setFormData({
       name: "",
       message: "",
@@ -97,7 +97,7 @@ const ModalForm = () => {
             }}
           >
             <button className={styles.contact_button} type="submit">
-              {t("button")}
+              {loading ? "Loading..." : t("button")}
             </button>
           </div>
         </form>

@@ -14,6 +14,7 @@ const ContactForm = () => {
   });
   const { t } = useTranslation();
   let [phoneNumber, setPhoneNumber] = useState();
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,7 +27,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = `Name: ${formData.name}; PhoneNumber: ${phoneNumber}; Message: ${formData.message}`;
-    SendData(data);
+    SendData(data, setLoading);
     setFormData({
       name: "",
       message: "",
@@ -77,7 +78,7 @@ const ContactForm = () => {
         }}
       >
         <button className={styles.contact_button} type="submit">
-          {t("button")}
+          {loading ? "Loading..." : t("button")}
         </button>
       </div>
     </form>

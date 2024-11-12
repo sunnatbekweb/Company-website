@@ -1,14 +1,22 @@
 import axios from "axios";
 import { message } from "antd";
 
-const baseUrl =
-  "https://api.telegram.org/bot6697491268:AAGy5ZEybcydM30rYmDhj8szNb1wtTrK7vg/";
+const baseUrl = "https://api.telegram.org/bot6697491268:AAGy5ZEybcydM30rYmDhj8szNb1wtTrK7vg/";
 
-export const SendData = (messageTg) => {
+export const SendData = (messageTg, setLoading) => {
   const url = `${baseUrl}sendMessage?chat_id=-1002036825261&text=${messageTg}`;
+
+  setLoading(true);
 
   axios
     .post(url)
-    .then(() => message.success("Ma'lumotingiz jonatildi!"))
-    .catch(() => message.error("Ma'lumotingizni jo'natishda xatolik yuz berdi!"));
+    .then(() => {
+      message.success("Ma'lumotingiz jonatildi!");
+    })
+    .catch(() => {
+      message.error("Ma'lumotingizni jo'natishda xatolik yuz berdi!");
+    })
+    .finally(() => {
+      setLoading(false);
+    });
 };
