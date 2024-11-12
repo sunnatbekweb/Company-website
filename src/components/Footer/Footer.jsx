@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <div className={`container ${styles.footer_wrapper}`}>
-      <h2 className={styles.footer_title}>Contacts</h2>
+      <h2 className={styles.footer_title}>{t("footer:footerTitle")}</h2>
       <div className={styles.contact_wrapper}>
         <div className={styles.contact_info}>
           <div className={styles.contact_item}>
