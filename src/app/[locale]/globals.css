@@ -59,40 +59,6 @@ a {
   background: var(--light-purple) !important;
 }
 
-.iti {
-  width: 100%;
-}
-
-.iti__selected-dial-code {
-  font-size: 16px;
-  line-height: normal;
-  color: var(--gray);
-}
-
-.iti__tel-input {
-  width: 100%;
-  padding: 12px 20px;
-  border-radius: 12px;
-  border: 2px solid var(--gray);
-  font-size: 16px;
-  color: var(--gray);
-  transition: all 0.1s ease;
-
-  &:user-invalid {
-    outline: 2px solid var(--red);
-    border: 2px solid var(--red);
-
-    .span {
-      display: block;
-    }
-  }
-}
-
-.iti__tel-input:focus {
-  border: 2px solid var(--light-purple);
-  outline: none;
-}
-
 .PhoneInputInput {
   border: none;
   font-size: 16px;
